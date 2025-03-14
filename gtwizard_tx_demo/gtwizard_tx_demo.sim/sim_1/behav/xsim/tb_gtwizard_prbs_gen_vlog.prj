@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../rtl/gtwizard_prbs_gen/gtwizard_sync_prbs_prbs_any.v" \
+
+sv xil_defaultlib  \
+"../../../../../sim/tb_gtwizard_prbs_gen.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

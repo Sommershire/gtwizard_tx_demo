@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_gtwizard_prbs_gen_behav/xsimk.exe -simmode gui -wdb tb_gtwizard_prbs_gen_behav.wdb -simrunnum 0 -socket 51198
+Design successfully loaded
+Design Loading Memory Usage: 7800 KB (Peak: 7800 KB)
+Design Loading CPU Usage: 0 ms
