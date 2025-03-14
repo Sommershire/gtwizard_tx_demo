@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Thu Mar 13 16:41:36 2025
+| Date         : Fri Mar 14 11:21:24 2025
 | Host         : DESKTOP-JR71JQO running 64-bit major release  (build 9200)
 | Command      : report_utilization -file gtwizard_line_tx_utilization_synth.rpt -pb gtwizard_line_tx_utilization_synth.pb
 | Design       : gtwizard_line_tx
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |  414 |     0 |          0 |    260600 |  0.16 |
-|   LUT as Logic          |  414 |     0 |          0 |    260600 |  0.16 |
+| Slice LUTs*             |  425 |     0 |          0 |    260600 |  0.16 |
+|   LUT as Logic          |  425 |     0 |          0 |    260600 |  0.16 |
 |   LUT as Memory         |    0 |     0 |          0 |    108600 |  0.00 |
 | Slice Registers         |  551 |     0 |          0 |    521200 |  0.11 |
 |   Register as Flip Flop |  551 |     0 |          0 |    521200 |  0.11 |
 |   Register as Latch     |    0 |     0 |          0 |    521200 |  0.00 |
-| F7 Muxes                |    0 |     0 |          0 |    149300 |  0.00 |
+| F7 Muxes                |    2 |     0 |          0 |    149300 | <0.01 |
 | F8 Muxes                |    0 |     0 |          0 |     74650 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 36    |          Yes |           - |        Reset |
-| 24    |          Yes |         Set |            - |
-| 491   |          Yes |       Reset |            - |
+| 28    |          Yes |         Set |            - |
+| 487   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -150,16 +150,17 @@ Table of Contents
 +---------------+------+---------------------+
 |    Ref Name   | Used | Functional Category |
 +---------------+------+---------------------+
-| FDRE          |  491 |        Flop & Latch |
-| LUT5          |  157 |                 LUT |
-| LUT6          |  106 |                 LUT |
-| LUT1          |   86 |                 LUT |
+| FDRE          |  487 |        Flop & Latch |
+| LUT5          |  136 |                 LUT |
+| LUT6          |  105 |                 LUT |
+| LUT4          |   94 |                 LUT |
+| LUT1          |   88 |                 LUT |
 | CARRY4        |   76 |          CarryLogic |
-| LUT4          |   67 |                 LUT |
+| LUT3          |   36 |                 LUT |
 | FDCE          |   36 |        Flop & Latch |
-| LUT2          |   34 |                 LUT |
-| LUT3          |   27 |                 LUT |
-| FDSE          |   24 |        Flop & Latch |
+| FDSE          |   28 |        Flop & Latch |
+| LUT2          |   25 |                 LUT |
+| MUXF7         |    2 |               MuxFx |
 | GTXE2_CHANNEL |    2 |                  IO |
 +---------------+------+---------------------+
 

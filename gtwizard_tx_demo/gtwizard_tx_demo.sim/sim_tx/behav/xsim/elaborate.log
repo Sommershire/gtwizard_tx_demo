@@ -1,0 +1,35 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/2021.1/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto e297ba015e944cc7b0f310a1d0dd5d43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot comm_tx_top_tb_behav xil_defaultlib.comm_tx_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'DATA_OUT' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gtwizard_sync_prbs_prbs_any(POLY...
+Compiling module unisims_ver.IBUFDS_GTE2
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.gtwizard_line_tx_GT_USRCLK_SOURC...
+Compiling module unisims_ver.GTXE2_COMMON(QPLL_FBDIV=10'b0111...
+Compiling module xil_defaultlib.gtwizard_line_tx_common(SIM_QPLL...
+Compiling module xil_defaultlib.gtwizard_line_tx_common_reset(ST...
+Compiling module unisims_ver.GTXE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.gtwizard_line_tx_GT(GT_SIM_GTRES...
+Compiling module xil_defaultlib.gtwizard_line_tx_multi_gt(WRAPPE...
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FD
+Compiling module xil_defaultlib.gtwizard_line_tx_sync_block
+Compiling module xil_defaultlib.gtwizard_line_tx_TX_STARTUP_FSM(...
+Compiling module xil_defaultlib.gtwizard_line_tx_RX_STARTUP_FSM(...
+Compiling module xil_defaultlib.gtwizard_line_tx_init_default
+Compiling module xil_defaultlib.gtwizard_line_tx
+Compiling module xil_defaultlib.gtwizard_line_tx_support
+Compiling module xil_defaultlib.gtwizard_tx_top
+Compiling module xil_defaultlib.comm_tx_top_default
+Compiling module xil_defaultlib.comm_tx_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot comm_tx_top_tb_behav

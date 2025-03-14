@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/example_design/gtwizard_line_tx_tx_startup_fsm.v" \
+"../../../../gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/example_design/gtwizard_line_tx_rx_startup_fsm.v" \
+"../../../../gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx_init.v" \
+"../../../../gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx_gt.v" \
+"../../../../gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx_multi_gt.v" \
+"../../../../gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/example_design/gtwizard_line_tx_sync_block.v" \
+"../../../../gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx.v" \
+"../../../../gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common.v" \
+"../../../../gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common_reset.v" \
+"../../../../gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_gt_usrclk_source.v" \
+"../../../../gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_support.v" \
+"../../../../gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_prbs_gen/gtwizard_sync_prbs_prbs_any.v" \
+
+sv xil_defaultlib  \
+"../../../../gtwizard_tx_demo.srcs/top/comm_tx_top.sv" \
+"../../../../gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv" \
+"../../../../gtwizard_tx_demo.srcs/comm_tx_top_sim/comm_tx_top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

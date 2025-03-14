@@ -72,7 +72,7 @@ module gtwizard_line_tx_init #
 (
     parameter EXAMPLE_SIM_GTRESET_SPEEDUP            = "TRUE",     // Simulation setting for GT SecureIP model
     parameter EXAMPLE_SIMULATION                     =  0,         // Set to 1 for simulation
-    parameter STABLE_CLOCK_PERIOD                    = 16,         //Period of the stable clock driving this state-machine, unit is [ns]
+    parameter STABLE_CLOCK_PERIOD                    = 20,         //Period of the stable clock driving this state-machine, unit is [ns]
     parameter EXAMPLE_USE_CHIPSCOPE                  =  0          // Set to 1 to use Chipscope to drive resets
 
 )

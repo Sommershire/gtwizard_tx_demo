@@ -1,0 +1,4 @@
+Running: xsim.dir/gtwizard_line_tx_TB_behav/xsimk.exe -simmode gui -wdb gtwizard_line_tx_TB_behav.wdb -simrunnum 0 -socket 50531
+Design successfully loaded
+Design Loading Memory Usage: 224976 KB (Peak: 224976 KB)
+Design Loading CPU Usage: 93 ms

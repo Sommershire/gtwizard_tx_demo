@@ -3,5 +3,5 @@
 Jun 10 2021
 20:04:57
 C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,uvm,,,,,,
-C:/Work/Codes/Realtime/gtwizard_tx_demo/rtl/gtwizard_prbs_gen/gtwizard_sync_prbs_prbs_any.v,1741764657,verilog,,,,gtwizard_sync_prbs_prbs_any,,uvm,,,,,,
-C:/Work/Codes/Realtime/gtwizard_tx_demo/sim/tb_gtwizard_prbs_gen.sv,1741830276,systemVerilog,,,,tb_gtwizard_prbs_gen,,uvm,,,,,,
+C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_prbs_gen/gtwizard_sync_prbs_prbs_any.v,1741764657,verilog,,,,gtwizard_sync_prbs_prbs_any,,uvm,,,,,,
+C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/prbs_sim/tb_gtwizard_prbs_gen.sv,1741831262,systemVerilog,,,,tb_gtwizard_prbs_gen,,uvm,,,,,,

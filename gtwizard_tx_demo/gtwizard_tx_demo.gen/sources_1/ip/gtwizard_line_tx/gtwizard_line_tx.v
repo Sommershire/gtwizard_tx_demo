@@ -217,7 +217,7 @@ input           gt1_data_valid_in,
     (
         .EXAMPLE_SIM_GTRESET_SPEEDUP    ("TRUE"),
         .EXAMPLE_SIMULATION             (0),
-        .STABLE_CLOCK_PERIOD            (16),
+        .STABLE_CLOCK_PERIOD            (20),
         .EXAMPLE_USE_CHIPSCOPE          (0)
     )
     inst

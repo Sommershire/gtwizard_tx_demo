@@ -61,3 +61,177 @@ INFO: [exportsim-Tcl-29] Script generated: 'C:/Work/Codes/Realtime/gtwizard_tx_d
 INFO: [SIM-utils-43] Exported 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.ip_user_files/sim_scripts/gtwizard_line_tx/activehdl/v7ht.tcl'
 INFO: [open_example_project] Open Example Project completed
 update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'gtwizard_line_tx_TB'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Runs 36-567] Checking/generating simulation output products for IPs/BDs (if any)...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/2021.1/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/2021.1/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gtwizard_line_tx_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_rx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_tx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_rx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_tx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_rx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_tx.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj gtwizard_line_tx_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/example_design/gtwizard_line_tx_tx_startup_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_TX_STARTUP_FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/example_design/gtwizard_line_tx_rx_startup_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_RX_STARTUP_FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx_gt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_GT
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx_multi_gt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_multi_gt
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/example_design/gtwizard_line_tx_sync_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_sync_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.srcs/sources_1/imports/example_design/support/gtwizard_line_tx_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.srcs/sources_1/imports/example_design/support/gtwizard_line_tx_common_reset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_common_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.srcs/sources_1/imports/example_design/gtwizard_line_tx_exdes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_exdes
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.srcs/sources_1/imports/example_design/gtwizard_line_tx_gt_frame_check.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_GT_FRAME_CHECK
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.srcs/sources_1/imports/example_design/gtwizard_line_tx_gt_frame_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_GT_FRAME_GEN
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.srcs/sources_1/imports/example_design/support/gtwizard_line_tx_gt_usrclk_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_GT_USRCLK_SOURCE
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.srcs/sources_1/imports/example_design/support/gtwizard_line_tx_support.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_support
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.srcs/sim_1/imports/simulation/gtwizard_line_tx_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim'
+"xelab -wto 542006e003e64d87ae3b7d45fbfd0ec5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot gtwizard_line_tx_TB_behav xil_defaultlib.gtwizard_line_tx_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/2021.1/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 542006e003e64d87ae3b7d45fbfd0ec5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot gtwizard_line_tx_TB_behav xil_defaultlib.gtwizard_line_tx_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS_GTE2
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.gtwizard_line_tx_GT_USRCLK_SOURC...
+Compiling module unisims_ver.GTXE2_COMMON(QPLL_FBDIV=10'b0111...
+Compiling module xil_defaultlib.gtwizard_line_tx_common(SIM_QPLL...
+Compiling module xil_defaultlib.gtwizard_line_tx_common_reset(ST...
+Compiling module unisims_ver.GTXE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.gtwizard_line_tx_GT(GT_SIM_GTRES...
+Compiling module xil_defaultlib.gtwizard_line_tx_multi_gt(WRAPPE...
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FD
+Compiling module xil_defaultlib.gtwizard_line_tx_sync_block
+Compiling module xil_defaultlib.gtwizard_line_tx_TX_STARTUP_FSM(...
+Compiling module xil_defaultlib.gtwizard_line_tx_RX_STARTUP_FSM(...
+Compiling module xil_defaultlib.gtwizard_line_tx_init_default
+Compiling module xil_defaultlib.gtwizard_line_tx
+Compiling module xil_defaultlib.gtwizard_line_tx_support
+Compiling module unisims_ver.IBUFDS
+Compiling module xil_defaultlib.gtwizard_line_tx_GT_FRAME_GEN
+Compiling module xil_defaultlib.gtwizard_line_tx_GT_FRAME_CHECK(...
+Compiling module xil_defaultlib.gtwizard_line_tx_exdes
+Compiling module xil_defaultlib.gtwizard_line_tx_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gtwizard_line_tx_TB_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/xsim.dir/gtwizard_line_tx_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 14 10:44:09 2025...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:01:07 . Memory (MB): peak = 1220.477 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '67' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "gtwizard_line_tx_TB_behav -key {Behavioral:sim_1:Functional:gtwizard_line_tx_TB} -tclbatch {gtwizard_line_tx_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source gtwizard_line_tx_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Timing checks are not valid
+Timing checks are valid
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'gtwizard_line_tx_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:01:12 . Memory (MB): peak = 1220.477 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'gtwizard_line_tx_TB'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Runs 36-567] Checking/generating simulation output products for IPs/BDs (if any)...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/2021.1/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/2021.1/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'gtwizard_line_tx_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_rx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_tx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_rx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_tx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_rx.dat'
+INFO: [SIM-utils-43] Exported 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim/gt_rom_init_tx.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj gtwizard_line_tx_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'gtwizard_line_tx_TB'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Runs 36-567] Checking/generating simulation output products for IPs/BDs (if any)...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_line_tx_ex/gtwizard_line_tx_ex.sim/sim_1/behav/xsim'
+"xelab -wto 542006e003e64d87ae3b7d45fbfd0ec5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot gtwizard_line_tx_TB_behav xil_defaultlib.gtwizard_line_tx_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/2021.1/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 542006e003e64d87ae3b7d45fbfd0ec5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot gtwizard_line_tx_TB_behav xil_defaultlib.gtwizard_line_tx_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1248.859 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1248.859 ; gain = 0.000
+Time resolution is 1 ps
+Timing checks are not valid
+Timing checks are valid
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 1248.859 ; gain = 0.000
+The simulator has terminated in an unexpected manner with exit code 1073807364.  Please review the simulation log (xsim.log) for details.

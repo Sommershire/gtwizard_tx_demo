@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-// Date        : Thu Mar 13 16:41:36 2025
+// Date        : Fri Mar 14 11:21:24 2025
 // Host        : DESKTOP-JR71JQO running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx_stub.v
