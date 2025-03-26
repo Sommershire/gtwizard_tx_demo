@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Mar 14 15:23:38 2025
+# Process ID: 12360
+# Current directory: C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.runs/synth_1
+# Command line: vivado.exe -log comm_tx_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source comm_tx_top.tcl
+# Log file: C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.runs/synth_1/comm_tx_top.vds
+# Journal file: C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source comm_tx_top.tcl -notrace

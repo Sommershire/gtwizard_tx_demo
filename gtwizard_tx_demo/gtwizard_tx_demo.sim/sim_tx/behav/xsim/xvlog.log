@@ -1,27 +1,3 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/example_design/gtwizard_line_tx_tx_startup_fsm.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_TX_STARTUP_FSM
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/example_design/gtwizard_line_tx_rx_startup_fsm.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_RX_STARTUP_FSM
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx_init.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_init
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx_gt.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_GT
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx_multi_gt.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_multi_gt
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/example_design/gtwizard_line_tx_sync_block.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_sync_block
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_common
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common_reset.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_common_reset
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_gt_usrclk_source.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_GT_USRCLK_SOURCE
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_support.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_line_tx_support
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_prbs_gen/gtwizard_sync_prbs_prbs_any.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gtwizard_sync_prbs_prbs_any
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module comm_tx_top
 INFO: [VRFC 10-2458] undeclared symbol line_tx_clk_p, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:35]

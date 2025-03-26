@@ -5,7 +5,6 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:56]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'DATA_OUT' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:57]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

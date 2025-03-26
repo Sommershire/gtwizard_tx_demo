@@ -1,0 +1,310 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Mar 14 15:46:27 2025
+# Process ID: 31472
+# Current directory: C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14076 C:\Work\Codes\Realtime\gtwizard_tx_demo\gtwizard_tx_demo\gtwizard_tx_demo.xpr
+# Log file: C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/vivado.log
+# Journal file: C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2021.1/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+open_example_project -force -dir C:/Work/Codes/Realtime [get_ips  gtwizard_line_tx]
+INFO: [IP_Flow 19-1686] Generating 'Examples' target for IP 'gtwizard_line_tx'...
+open_example_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 1249.004 ; gain = 0.000
+launch_simulation -simset [get_filesets sim_tx ]
+Command: launch_simulation -simset sim_tx
+INFO: [Vivado 12-12493] Simulation top is 'comm_tx_top_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_tx'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/2021.1/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/2021.1/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'comm_tx_top_tb' in fileset 'sim_tx'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_tx'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+"xvlog --incr --relax -L uvm -prj comm_tx_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/ldpc_encoder/H1_loader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H1_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/ldpc_encoder/H2_loader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module H2_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comm_tx_top
+INFO: [VRFC 10-2458] undeclared symbol line_tx_clk_p, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:35]
+INFO: [VRFC 10-2458] undeclared symbol line_tx_clk_n, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:36]
+INFO: [VRFC 10-2458] undeclared symbol drpclk_in_p, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:38]
+INFO: [VRFC 10-2458] undeclared symbol drpclk_in_n, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:39]
+ERROR: [VRFC 10-8414] extra comma in port association list is not allowed [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:81]
+ERROR: [VRFC 10-2865] module 'comm_tx_top' ignored due to previous errors [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:22]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+launch_simulation -simset [get_filesets sim_tx ]
+Command: launch_simulation -simset sim_tx
+INFO: [Vivado 12-12493] Simulation top is 'comm_tx_top_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_tx'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/2021.1/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/2021.1/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'comm_tx_top_tb' in fileset 'sim_tx'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_tx'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+"xvlog --incr --relax -L uvm -prj comm_tx_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comm_tx_top
+INFO: [VRFC 10-2458] undeclared symbol line_tx_clk_p, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:35]
+INFO: [VRFC 10-2458] undeclared symbol line_tx_clk_n, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:36]
+INFO: [VRFC 10-2458] undeclared symbol drpclk_in_p, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:38]
+INFO: [VRFC 10-2458] undeclared symbol drpclk_in_n, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:39]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_tx_top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'gt0_txdata_i' is not allowed [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:126]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'gt1_txdata_i' is not allowed [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:180]
+INFO: [VRFC 10-2458] undeclared symbol zero_vector_rx_80, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:276]
+INFO: [VRFC 10-2458] undeclared symbol zero_vector_rx_8, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:277]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/comm_tx_top_sim/comm_tx_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comm_tx_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+"xelab -wto e297ba015e944cc7b0f310a1d0dd5d43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot comm_tx_top_tb_behav xil_defaultlib.comm_tx_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/2021.1/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto e297ba015e944cc7b0f310a1d0dd5d43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot comm_tx_top_tb_behav xil_defaultlib.comm_tx_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gtwizard_sync_prbs_prbs_any(POLY...
+Compiling module unisims_ver.IBUFDS_GTE2
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.gtwizard_line_tx_GT_USRCLK_SOURC...
+Compiling module unisims_ver.GTXE2_COMMON(QPLL_FBDIV=10'b0111...
+Compiling module xil_defaultlib.gtwizard_line_tx_common(SIM_QPLL...
+Compiling module xil_defaultlib.gtwizard_line_tx_common_reset(ST...
+Compiling module unisims_ver.GTXE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.gtwizard_line_tx_GT(GT_SIM_GTRES...
+Compiling module xil_defaultlib.gtwizard_line_tx_multi_gt(WRAPPE...
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FD
+Compiling module xil_defaultlib.gtwizard_line_tx_sync_block
+Compiling module xil_defaultlib.gtwizard_line_tx_TX_STARTUP_FSM(...
+Compiling module xil_defaultlib.gtwizard_line_tx_RX_STARTUP_FSM(...
+Compiling module xil_defaultlib.gtwizard_line_tx_init_default
+Compiling module xil_defaultlib.gtwizard_line_tx
+Compiling module xil_defaultlib.gtwizard_line_tx_support
+Compiling module xil_defaultlib.gtwizard_tx_top
+Compiling module xil_defaultlib.comm_tx_top_default
+Compiling module xil_defaultlib.comm_tx_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot comm_tx_top_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:01:07 . Memory (MB): peak = 1249.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '67' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "comm_tx_top_tb_behav -key {Behavioral:sim_tx:Functional:comm_tx_top_tb} -tclbatch {comm_tx_top_tb.tcl} -view {C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/comm_tx_top_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/comm_tx_top_tb_behav.wcfg
+source comm_tx_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'comm_tx_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:01:14 . Memory (MB): peak = 1249.004 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_tx -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'comm_tx_top_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_tx'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/2021.1/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/2021.1/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'comm_tx_top_tb' in fileset 'sim_tx'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_tx'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+"xvlog --incr --relax -L uvm -prj comm_tx_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comm_tx_top
+INFO: [VRFC 10-2458] undeclared symbol line_tx_clk_p, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:35]
+INFO: [VRFC 10-2458] undeclared symbol line_tx_clk_n, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:36]
+INFO: [VRFC 10-2458] undeclared symbol drpclk_in_p, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:38]
+INFO: [VRFC 10-2458] undeclared symbol drpclk_in_n, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:39]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_tx_top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'gt0_txdata_i' is not allowed [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:126]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'gt1_txdata_i' is not allowed [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:180]
+INFO: [VRFC 10-2458] undeclared symbol zero_vector_rx_80, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:276]
+INFO: [VRFC 10-2458] undeclared symbol zero_vector_rx_8, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:277]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/comm_tx_top_sim/comm_tx_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comm_tx_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_tx -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'comm_tx_top_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+"xelab -wto e297ba015e944cc7b0f310a1d0dd5d43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot comm_tx_top_tb_behav xil_defaultlib.comm_tx_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/2021.1/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto e297ba015e944cc7b0f310a1d0dd5d43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot comm_tx_top_tb_behav xil_defaultlib.comm_tx_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gtwizard_sync_prbs_prbs_any(POLY...
+Compiling module unisims_ver.IBUFDS_GTE2
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.gtwizard_line_tx_GT_USRCLK_SOURC...
+Compiling module unisims_ver.GTXE2_COMMON(QPLL_FBDIV=10'b0111...
+Compiling module xil_defaultlib.gtwizard_line_tx_common(SIM_QPLL...
+Compiling module xil_defaultlib.gtwizard_line_tx_common_reset(ST...
+Compiling module unisims_ver.GTXE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.gtwizard_line_tx_GT(GT_SIM_GTRES...
+Compiling module xil_defaultlib.gtwizard_line_tx_multi_gt(WRAPPE...
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FD
+Compiling module xil_defaultlib.gtwizard_line_tx_sync_block
+Compiling module xil_defaultlib.gtwizard_line_tx_TX_STARTUP_FSM(...
+Compiling module xil_defaultlib.gtwizard_line_tx_RX_STARTUP_FSM(...
+Compiling module xil_defaultlib.gtwizard_line_tx_init_default
+Compiling module xil_defaultlib.gtwizard_line_tx
+Compiling module xil_defaultlib.gtwizard_line_tx_support
+Compiling module xil_defaultlib.gtwizard_tx_top
+Compiling module xil_defaultlib.comm_tx_top_default
+Compiling module xil_defaultlib.comm_tx_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot comm_tx_top_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1380.188 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '62' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1380.188 ; gain = 0.000
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1380.188 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_tx -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'comm_tx_top_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_tx'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/2021.1/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/2021.1/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'comm_tx_top_tb' in fileset 'sim_tx'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_tx'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+"xvlog --incr --relax -L uvm -prj comm_tx_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comm_tx_top
+INFO: [VRFC 10-2458] undeclared symbol line_tx_clk_p, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:35]
+INFO: [VRFC 10-2458] undeclared symbol line_tx_clk_n, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:36]
+INFO: [VRFC 10-2458] undeclared symbol drpclk_in_p, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:38]
+INFO: [VRFC 10-2458] undeclared symbol drpclk_in_n, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:39]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_tx_top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'gt0_txdata_i' is not allowed [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:126]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'gt1_txdata_i' is not allowed [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:180]
+INFO: [VRFC 10-2458] undeclared symbol zero_vector_rx_80, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:276]
+INFO: [VRFC 10-2458] undeclared symbol zero_vector_rx_8, assumed default net type wire [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:277]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/comm_tx_top_sim/comm_tx_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comm_tx_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_tx -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'comm_tx_top_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.sim/sim_tx/behav/xsim'
+"xelab -wto e297ba015e944cc7b0f310a1d0dd5d43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot comm_tx_top_tb_behav xil_defaultlib.comm_tx_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/2021.1/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto e297ba015e944cc7b0f310a1d0dd5d43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot comm_tx_top_tb_behav xil_defaultlib.comm_tx_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'EN' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.gtwizard_sync_prbs_prbs_any(POLY...
+Compiling module unisims_ver.IBUFDS_GTE2
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.gtwizard_line_tx_GT_USRCLK_SOURC...
+Compiling module unisims_ver.GTXE2_COMMON(QPLL_FBDIV=10'b0111...
+Compiling module xil_defaultlib.gtwizard_line_tx_common(SIM_QPLL...
+Compiling module xil_defaultlib.gtwizard_line_tx_common_reset(ST...
+Compiling module unisims_ver.GTXE2_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.gtwizard_line_tx_GT(GT_SIM_GTRES...
+Compiling module xil_defaultlib.gtwizard_line_tx_multi_gt(WRAPPE...
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FD
+Compiling module xil_defaultlib.gtwizard_line_tx_sync_block
+Compiling module xil_defaultlib.gtwizard_line_tx_TX_STARTUP_FSM(...
+Compiling module xil_defaultlib.gtwizard_line_tx_RX_STARTUP_FSM(...
+Compiling module xil_defaultlib.gtwizard_line_tx_init_default
+Compiling module xil_defaultlib.gtwizard_line_tx
+Compiling module xil_defaultlib.gtwizard_line_tx_support
+Compiling module xil_defaultlib.gtwizard_tx_top
+Compiling module xil_defaultlib.comm_tx_top_default
+Compiling module xil_defaultlib.comm_tx_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot comm_tx_top_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:01:07 . Memory (MB): peak = 1381.938 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '67' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:01:07 . Memory (MB): peak = 1381.938 ; gain = 0.000
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:01:12 . Memory (MB): peak = 1381.938 ; gain = 0.000
+run 500 us
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1382.551 ; gain = 0.027
+save_wave_config {C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/comm_tx_top_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 14 16:43:21 2025...

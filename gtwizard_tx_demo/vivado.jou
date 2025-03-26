@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Mar 14 15:46:27 2025
+# Process ID: 31472
+# Current directory: C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14076 C:\Work\Codes\Realtime\gtwizard_tx_demo\gtwizard_tx_demo\gtwizard_tx_demo.xpr
+# Log file: C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/vivado.log
+# Journal file: C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.xpr
+update_compile_order -fileset sources_1
+open_example_project -force -dir C:/Work/Codes/Realtime [get_ips  gtwizard_line_tx]
+launch_simulation -simset [get_filesets sim_tx ]
+update_compile_order -fileset sources_1
+launch_simulation -simset [get_filesets sim_tx ]
+open_wave_config C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/comm_tx_top_tb_behav.wcfg
+source comm_tx_top_tb.tcl
+relaunch_sim
+relaunch_sim
+run 500 us
+save_wave_config {C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/comm_tx_top_tb_behav.wcfg}
+close_sim

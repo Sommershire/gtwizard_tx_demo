@@ -1,0 +1,303 @@
+
+*** Running vivado
+    with args -log comm_tx_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source comm_tx_top.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source comm_tx_top.tcl -notrace
+Command: synth_design -top comm_tx_top -part xc7k420tiffg901-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k420ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k420ti'
+INFO: [Device 21-403] Loading part xc7k420tiffg901-2L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34904
+WARNING: [Synth 8-2611] redeclaration of ansi port gt0_txdata_i is not allowed [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:126]
+CRITICAL WARNING: [Synth 8-976] gt0_txdata_i has already been declared [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:126]
+CRITICAL WARNING: [Synth 8-2654] second declaration of gt0_txdata_i ignored [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:126]
+INFO: [Synth 8-994] gt0_txdata_i is declared here [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:39]
+WARNING: [Synth 8-2611] redeclaration of ansi port gt1_txdata_i is not allowed [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:180]
+CRITICAL WARNING: [Synth 8-976] gt1_txdata_i has already been declared [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:180]
+CRITICAL WARNING: [Synth 8-2654] second declaration of gt1_txdata_i ignored [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:180]
+INFO: [Synth 8-994] gt1_txdata_i is declared here [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1248.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'comm_tx_top' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_sync_prbs_prbs_any' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_prbs_gen/gtwizard_sync_prbs_prbs_any.v:136]
+	Parameter CHK_MODE bound to: 0 - type: integer 
+	Parameter INV_PATTERN bound to: 0 - type: integer 
+	Parameter POLY_LENGHT bound to: 23 - type: integer 
+	Parameter POLY_TAP bound to: 18 - type: integer 
+	Parameter NBITS bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_sync_prbs_prbs_any' (1#1) [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_prbs_gen/gtwizard_sync_prbs_prbs_any.v:136]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_tx_top' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_line_tx_support' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_support.v:70]
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_line_tx_GT_USRCLK_SOURCE' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_gt_usrclk_source.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [C:/Xilinx/2021.1/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51811]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (2#1) [C:/Xilinx/2021.1/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51811]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/2021.1/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/2021.1/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_line_tx_GT_USRCLK_SOURCE' (4#1) [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_gt_usrclk_source.v:68]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_line_tx_common' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common.v:69]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b010 
+INFO: [Synth 8-6157] synthesizing module 'GTXE2_COMMON' [C:/Xilinx/2021.1/Vivado/2021.1/scripts/rt/data/unisim_comp.v:37796]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000001000000000000000000000000000001000000000000 
+	Parameter COMMON_CFG bound to: 0 - type: integer 
+	Parameter QPLL_CFG bound to: 27'b000011010000000000110000001 
+	Parameter QPLL_CLKOUT_CFG bound to: 4'b0000 
+	Parameter QPLL_COARSE_FREQ_OVRD bound to: 6'b010000 
+	Parameter QPLL_COARSE_FREQ_OVRD_EN bound to: 1'b0 
+	Parameter QPLL_CP bound to: 10'b0000011111 
+	Parameter QPLL_CP_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_DMONITOR_SEL bound to: 1'b0 
+	Parameter QPLL_FBDIV bound to: 10'b0011100000 
+	Parameter QPLL_FBDIV_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+	Parameter QPLL_INIT_CFG bound to: 24'b000000000000000000000110 
+	Parameter QPLL_LOCK_CFG bound to: 16'b0010000111101000 
+	Parameter QPLL_LPF bound to: 4'b1111 
+	Parameter QPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b010 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'GTXE2_COMMON' (5#1) [C:/Xilinx/2021.1/Vivado/2021.1/scripts/rt/data/unisim_comp.v:37796]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_line_tx_common' (6#1) [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common.v:69]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_line_tx_common_reset' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common_reset.v:74]
+	Parameter STABLE_CLOCK_PERIOD bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common_reset.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_line_tx_common_reset' (7#1) [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common_reset.v:74]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_line_tx' [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.runs/synth_1/.Xil/Vivado-12360-DESKTOP-JR71JQO/realtime/gtwizard_line_tx_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_line_tx' (8#1) [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.runs/synth_1/.Xil/Vivado-12360-DESKTOP-JR71JQO/realtime/gtwizard_line_tx_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_line_tx_support' (9#1) [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_support.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_tx_top' (10#1) [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_top.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'comm_tx_top' (11#1) [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/top/comm_tx_top.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1248.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1248.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1248.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1248.750 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/gtwizard_line_tx_in_context.xdc] for cell 'gtwizard_tx_top/gtwizard_line_tx_support_i/gtwizard_line_tx_init_i'
+Finished Parsing XDC File [c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx/gtwizard_line_tx_in_context.xdc] for cell 'gtwizard_tx_top/gtwizard_line_tx_support_i/gtwizard_line_tx_init_i'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1325.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1325.559 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k420tiffg901-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for gtwizard_tx_top/gtwizard_line_tx_support_i/gtwizard_line_tx_init_i. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 64    
++---Registers : 
+	               32 Bit    Registers := 2     
+	               23 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1680 (col length:160)
+BRAMs: 1670 (col length: RAMB18 160 RAMB36 80)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/soft_reset_vio_i_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt_txfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt_txfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt0_txfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt0_txfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt0_rxfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt0_rxfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt0_rxresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt0_rxresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt0_rxresetdone_r3_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt0_rxresetdone_vio_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt0_rxresetdone_vio_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt0_rxresetdone_vio_r3_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt1_txfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt1_txfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt1_rxfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt1_rxfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt1_rxresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt1_rxresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt1_rxresetdone_r3_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt1_rxresetdone_vio_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt1_rxresetdone_vio_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_tx_top/gt1_rxresetdone_vio_r3_inferred:in0 to constant 0
+WARNING: [Synth 8-5410] Found another clock driver \gtwizard_tx_top/gtwizard_line_tx_support_i/gt_usrclk_source/ibufds_instQ0_CLK1 :O [C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_gt_usrclk_source.v:116]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |gtwizard_line_tx |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |gtwizard_line_tx |     1|
+|2     |BUFG             |     2|
+|3     |GTXE2_COMMON     |     1|
+|4     |IBUFDS_GTE2      |     1|
+|5     |LUT1             |    26|
+|6     |LUT2             |    27|
+|7     |LUT3             |     5|
+|8     |FDRE             |    34|
+|9     |FDSE             |    32|
+|10    |IBUF             |     2|
+|11    |OBUF             |     2|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1325.559 ; gain = 76.809
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.559 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1325.559 ; gain = 76.809
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1325.559 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1344.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 978b80fb
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 26 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:24 . Memory (MB): peak = 1344.707 ; gain = 95.957
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.runs/synth_1/comm_tx_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file comm_tx_top_utilization_synth.rpt -pb comm_tx_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 14 15:24:06 2025...

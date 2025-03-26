@@ -1,0 +1,177 @@
+
+*** Running vivado
+    with args -log comm_tx_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source comm_tx_top.tcl -notrace
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source comm_tx_top.tcl -notrace
+Command: link_design -top comm_tx_top -part xc7k420tiffg901-2L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7k420tiffg901-2L
+INFO: [Project 1-454] Reading design checkpoint 'c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx.dcp' for cell 'gtwizard_tx_top/gtwizard_line_tx_support_i/gtwizard_line_tx_init_i'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1249.113 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx.xdc] for cell 'gtwizard_tx_top/gtwizard_line_tx_support_i/gtwizard_line_tx_init_i/inst'
+Finished Parsing XDC File [c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx.xdc] for cell 'gtwizard_tx_top/gtwizard_line_tx_support_i/gtwizard_line_tx_init_i/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1249.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k420ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k420ti'
+Parsing TCL File [c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/tcl/v7ht.tcl] from IP C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.srcs/sources_1/ip/gtwizard_line_tx/gtwizard_line_tx.xci
+Sourcing Tcl File [c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/tcl/v7ht.tcl]
+
+****************************************************************************************
+*  WARNING: This script only supports the xc7vh290t, xc7vh580t and xc7vh870t devices.  *
+*           Your current part is xc7k420ti.                                            *
+****************************************************************************************
+
+Finished Sourcing Tcl File [c:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.gen/sources_1/ip/gtwizard_line_tx/tcl/v7ht.tcl]
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.776 . Memory (MB): peak = 1249.113 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: d31f3bc5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1639.094 ; gain = 389.980
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 9a27422e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1857.238 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 6 cells and removed 30 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: cdc2f9c6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1857.238 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 2 cells and removed 890 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: bb3d8f30
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 1857.238 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 244 cells
+INFO: [Opt 31-1021] In phase Sweep, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: bb3d8f30
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1857.238 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: bb3d8f30
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 1857.238 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: bb3d8f30
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1857.238 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               6  |              30  |                                              1  |
+|  Constant propagation         |               2  |             890  |                                              1  |
+|  Sweep                        |               0  |             244  |                                              1  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              1  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1857.238 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: c11bd3bb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1857.238 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: c11bd3bb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1857.238 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: c11bd3bb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1857.238 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1857.238 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: c11bd3bb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1857.238 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1857.238 ; gain = 608.125
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.runs/impl_1/comm_tx_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file comm_tx_top_drc_opted.rpt -pb comm_tx_top_drc_opted.pb -rpx comm_tx_top_drc_opted.rpx
+Command: report_drc -file comm_tx_top_drc_opted.rpt -pb comm_tx_top_drc_opted.pb -rpx comm_tx_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Work/Codes/Realtime/gtwizard_tx_demo/gtwizard_tx_demo/gtwizard_tx_demo.runs/impl_1/comm_tx_top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k420ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k420ti'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC REQP-1619] IBUFDS_GTE2_driven_by_IBUF: IBUFDS_GTE2 gtwizard_tx_top/gtwizard_line_tx_support_i/gt_usrclk_source/ibufds_instQ0_CLK1 pins I and IB should be driven by IBUFs.
+CRITICAL WARNING: [DRC AVAL-326] Hard_block_must_have_LOC: The hard block GTXE2_CHANNEL cell gtwizard_tx_top/gtwizard_line_tx_support_i/gtwizard_line_tx_init_i/inst/gtwizard_line_tx_i/gt0_gtwizard_line_tx_i/gtxe2_i is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing or other issues. Please check your design and set a valid LOC for this block to avoid these problems.
+CRITICAL WARNING: [DRC AVAL-326] Hard_block_must_have_LOC: The hard block GTXE2_CHANNEL cell gtwizard_tx_top/gtwizard_line_tx_support_i/gtwizard_line_tx_init_i/inst/gtwizard_line_tx_i/gt1_gtwizard_line_tx_i/gtxe2_i is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing or other issues. Please check your design and set a valid LOC for this block to avoid these problems.
+CRITICAL WARNING: [DRC AVAL-326] Hard_block_must_have_LOC: The hard block IBUFDS_GTE2 cell gtwizard_tx_top/gtwizard_line_tx_support_i/gt_usrclk_source/ibufds_instQ0_CLK1 is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing or other issues. Please check your design and set a valid LOC for this block to avoid these problems.
+INFO: [Vivado_Tcl 4-198] DRC finished with 1 Errors, 3 Critical Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+INFO: [Common 17-83] Releasing license: Implementation
+44 Infos, 0 Warnings, 3 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 14 15:25:08 2025...

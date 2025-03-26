@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k420tiffg901-2L" LaunchTime="1741937080">
+  <File Type="PA-TCL" Name="comm_tx_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="comm_tx_top_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="comm_tx_top.msk"/>
+  <File Type="RDI-RDI" Name="comm_tx_top.vdi"/>
+  <File Type="BG-BIT" Name="comm_tx_top.bit"/>
+  <File Type="BG-DRC" Name="comm_tx_top.drc"/>
+  <File Type="BG-BGN" Name="comm_tx_top.bgn"/>
+  <File Type="BG-BIN" Name="comm_tx_top.bin"/>
+  <File Type="BITSTR-RBT" Name="comm_tx_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="comm_tx_top.nky"/>
+  <File Type="BITSTR-BMM" Name="comm_tx_top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="comm_tx_top.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="comm_tx_top.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="comm_tx_top.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="comm_tx_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="comm_tx_top.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="comm_tx_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="comm_tx_top_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="comm_tx_top_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="comm_tx_top_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="comm_tx_top_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="comm_tx_top_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="comm_tx_top_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="comm_tx_top_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="comm_tx_top_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="comm_tx_top_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="comm_tx_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="comm_tx_top_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="comm_tx_top.pdi"/>
+  <File Type="RCFI_FILE" Name="comm_tx_top.rcfi"/>
+  <File Type="CFI_FILE" Name="comm_tx_top.cfi"/>
+  <File Type="RNPI_FILE" Name="comm_tx_top.rnpi"/>
+  <File Type="NPI_FILE" Name="comm_tx_top.npi"/>
+  <File Type="RBD_FILE" Name="comm_tx_top.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_common_reset.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_gt_usrclk_source.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/gtwizard_tx/gtwizard_tx_example/support/gtwizard_line_tx_support.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/gtwizard_tx/gtwizard_prbs_gen/gtwizard_sync_prbs_prbs_any.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/gtwizard_tx/gtwizard_tx_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/top/comm_tx_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="comm_tx_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="gtwizard_line_tx"/>
+</GenRun>

@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module comm_tx_top_tb #(
-    parameter   TX_REFCLK_PERIOD = 6.4,
-    parameter   SYSCLK_PERIOD = 20,
-    parameter   DRPCLK_PERIOD = 20
+    parameter   TX_REFCLK_PERIOD = 5.4,         // 185.19MHz 
+    parameter   SYSCLK_PERIOD = 20,             // 50MHz
+    parameter   DRPCLK_PERIOD = 20              // 50MHz
 )();
     logic rst;
     logic clk;

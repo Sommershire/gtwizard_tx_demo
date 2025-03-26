@@ -11,15 +11,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="282.120 ns"></ZoomStartTime>
-      <ZoomEndTime time="668.321 ns"></ZoomEndTime>
-      <Cursor1Time time="431.320 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="19.370001 us"></ZoomEndTime>
+      <Cursor1Time time="2.603219 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="312"></NameColumnWidth>
-      <ValueColumnWidth column_width="289"></ValueColumnWidth>
+      <ValueColumnWidth column_width="283"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="9" />
+   <wave_markers>
+      <marker time="431489" label="" />
+   </wave_markers>
    <wvobject fp_name="/comm_tx_top_tb/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
@@ -74,8 +77,8 @@
          <obj_property name="ObjectShortName">drpclk_in_p</obj_property>
       </wvobject>
       <wvobject fp_name="/comm_tx_top_tb/comm_tx_top/prbs_64b" type="array">
-         <obj_property name="ElementShortName">prbs_64b[63:0]</obj_property>
-         <obj_property name="ObjectShortName">prbs_64b[63:0]</obj_property>
+         <obj_property name="ElementShortName">prbs_64b[31:0]</obj_property>
+         <obj_property name="ObjectShortName">prbs_64b[31:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/comm_tx_top_tb/comm_tx_top/line_tx_data_raw" type="array">
          <obj_property name="ElementShortName">line_tx_data_raw[31:0]</obj_property>
@@ -92,7 +95,19 @@
       <wvobject fp_name="/comm_tx_top_tb/comm_tx_top/line_tx_data_in" type="array">
          <obj_property name="ElementShortName">line_tx_data_in[1:2][15:0]</obj_property>
          <obj_property name="ObjectShortName">line_tx_data_in[1:2][15:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/comm_tx_top_tb/comm_tx_top/line_tx_data_in[1]" type="array">
+            <obj_property name="ElementShortName">[1][15:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][15:0]</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="/comm_tx_top_tb/comm_tx_top/line_tx_data_in[2]" type="array">
+            <obj_property name="ElementShortName">[2][15:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][15:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/comm_tx_top_tb/comm_tx_top/gtwizard_tx_top/gtwizard_line_tx_support_i/gt0_txresetdone_out" type="logic">
+         <obj_property name="ElementShortName">gt0_txresetdone_out</obj_property>
+         <obj_property name="ObjectShortName">gt0_txresetdone_out</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>
